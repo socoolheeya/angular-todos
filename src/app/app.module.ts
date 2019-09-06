@@ -3,6 +3,13 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { TodoModule } from './todo/todo.module';
+import { HeaderModule } from './header/header.module';
+import { FooterModule } from './footer/footer.module';
+
+
 
 @NgModule({
   declarations: [
@@ -10,7 +17,10 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HeaderModule,
+    FooterModule,
+    TodoModule
   ],
   providers: [],
   bootstrap: [AppComponent]
