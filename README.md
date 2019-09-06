@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # angular-todos
 angular-todos project
 =======
