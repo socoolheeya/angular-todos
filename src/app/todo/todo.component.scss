@@ -1,4 +1,17 @@
 .todo-container {
   position: relative;
-  margin-top: 50px;
+  .todo-form {
+    position: absolute;
+    margin-top: 100px;
+    padding: 0 3rem;
+    .todo-input {
+      border-radius: 0.2rem;
+      border: 1px solid #ddd;
+    }
+  }
+  .todo-list {
+    position: absolute;
+    margin-top: 400px;
+    padding: 0 3rem;
+  }
 }

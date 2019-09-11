@@ -27,4 +27,83 @@ body {
   box-sizing: inherit;
 }
 
+ul {
+  list-style: none;
+}
+
+.center {
+  text-align: center;
+}
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
+
+.default-input {
+  border-radius: 0.2rem;
+  border: 1px solid #ddd;
+  padding: 0.5rem 0.2rem;
+}
+
+.btn {
+  border-radius: 0.2rem;
+  border: 1px solid #ddd;
+  padding: 0.3rem 0.6rem;
+  font-size: inherit;
+  cursor: pointer;
+}
+.btn:hover {
+  transition: 0.3s;
+}
+.btn.btn-default {
+  background-color: #ddd;
+  border-color: #ddd;
+  color: #bbb;
+}
+.btn.btn-default:hover {
+  background-color: #7c7c7c;
+  border-color: #7c7c7c;
+}
+.btn.btn-green {
+  background-color: #0ACD7F;
+  border-color: #0ACD7F;
+  color: #fff;
+}
+.btn.btn-blue {
+  background-color: #0672FF;
+  border-color: #0672FF;
+  color: #fff;
+}
+.btn.btn-light-blue {
+  background-color: #1EA4FF;
+  border-color: #1EA4FF;
+  color: #fff;
+}
+.btn.btn-light-blue:hover {
+  background-color: #1a8edb;
+  border-color: #1a8edb;
+}
+.btn.btn-yellow {
+  background-color: #0ACD7F;
+  border-color: #0ACD7F;
+  color: #fff;
+}
+.btn.btn-orange {
+  background-color: #FF7B49;
+  border-color: #FF7B49;
+  color: #fff;
+}
+.btn.btn-olive {
+  background-color: #6CB41E;
+  border-color: #6CB41E;
+  color: #fff;
+}
+.btn.btn-violet {
+  background-color: #A156DD;
+  border-color: #A156DD;
+  color: #fff;
+}
+
 

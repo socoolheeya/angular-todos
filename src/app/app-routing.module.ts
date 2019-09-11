@@ -1,20 +1,29 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { TodoComponent } from './todo/todo.component';
+import {SettingComponent} from './setting/setting.component';
+import {AppComponent} from './app.component';
+
 
 const routes: Routes = [
   {
-    path: 'todo',
-    loadChildren: () => import('./todo/todo.module').then(m => m.TodoModule)
+    path: '',
+    component: TodoComponent
   },
   {
-    path: 'test',
-    loadChildren: () => import('./todo/todo.module').then(m => m.TodoModule)
+    path: 'todo',
+    component: TodoComponent
+  },
+  {
+    path: 'setting',
+    component: SettingComponent
   }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [
+    RouterModule.forRoot(routes)
+  ],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

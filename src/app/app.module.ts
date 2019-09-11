@@ -5,24 +5,29 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { TodoModule } from './todo/todo.module';
-import { HeaderModule } from './header/header.module';
-import { FooterModule } from './footer/footer.module';
+import {TodoComponent} from './todo/todo.component';
+import {HashLocationStrategy, LocationStrategy} from '@angular/common';
+import { SettingComponent } from './setting/setting.component';
+
 
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    FooterComponent,
+    TodoComponent,
+    SettingComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HeaderModule,
-    FooterModule,
-    TodoModule
   ],
-  providers: [],
+  providers: [{
+    provide: LocationStrategy,
+    useClass: HashLocationStrategy
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

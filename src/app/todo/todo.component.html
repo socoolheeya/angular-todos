@@ -1,5 +1,16 @@
-<li class="todo-container" *ngFor="let t of title">
-  todo component!!!!! {{t}}
-</li>
+<div class="todo-container">
+  <div class="todo-form">
+    <input class="default-input" [value]="todoValue" placeholder="할일을 작성하세요">
+    <button class="btn btn-light-blue" (click)="addTodo()">입력</button>
+  </div>
+  <article class="todo-list">
+    <ul>
+      <li>{{todoItem}}</li>
+    </ul>
+  </article>
+
+</div>
+
+
 
 
