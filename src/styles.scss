@@ -31,6 +31,19 @@ ul {
   list-style: none;
 }
 
+footer {
+  font-size: 18px;
+  padding: .63rem 1rem;
+  background-color: #7c7c7c;
+  color: #fff;
+}
+
+input {
+  border-radius: 0.2rem;
+  border: 1px solid #ddd;
+  padding: 0.5rem 0.2rem;
+}
+
 .center {
   text-align: center;
 }
@@ -47,6 +60,10 @@ ul {
   padding: 0.5rem 0.2rem;
 }
 
+.long-input {
+  width: 20rem;
+}
+
 .btn {
   border-radius: 0.2rem;
   border: 1px solid #ddd;
@@ -56,6 +73,10 @@ ul {
 }
 .btn:hover {
   transition: 0.3s;
+}
+.btn.btn-group {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 .btn.btn-default {
   background-color: #ddd;
@@ -86,24 +107,40 @@ ul {
   border-color: #1a8edb;
 }
 .btn.btn-yellow {
-  background-color: #0ACD7F;
-  border-color: #0ACD7F;
+  background-color: #ffd42b;
+  border-color: #ffd42b;
   color: #fff;
+}
+.btn.btn-yellow:hover {
+  background-color: #edc528;
+  border-color: #edc528;
 }
 .btn.btn-orange {
   background-color: #FF7B49;
   border-color: #FF7B49;
   color: #fff;
 }
+.btn.btn-orange:hover {
+  background-color: #e86f43;
+  border-color: #e86f43;
+}
 .btn.btn-olive {
   background-color: #6CB41E;
   border-color: #6CB41E;
   color: #fff;
 }
+.btn.btn-olive:hover {
+  background-color: #5c9619;
+  border-color: #5c9619;
+}
 .btn.btn-violet {
   background-color: #A156DD;
   border-color: #A156DD;
   color: #fff;
+}
+.btn.btn-violet:hover {
+  background-color: #8e4cc4;
+  border-color: #8e4cc4;
 }
 
 

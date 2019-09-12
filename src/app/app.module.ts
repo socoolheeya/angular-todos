@@ -7,7 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import {TodoComponent} from './todo/todo.component';
 import {HashLocationStrategy, LocationStrategy} from '@angular/common';
-import { SettingComponent } from './setting/setting.component';
+import {FormsModule} from '@angular/forms';
 
 
 
@@ -17,12 +17,12 @@ import { SettingComponent } from './setting/setting.component';
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    TodoComponent,
-    SettingComponent
+    TodoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
   ],
   providers: [{
     provide: LocationStrategy,

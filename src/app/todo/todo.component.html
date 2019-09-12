@@ -1,14 +1,20 @@
 <div class="todo-container">
-  <div class="todo-form">
-    <input class="default-input" [value]="todoValue" placeholder="할일을 작성하세요">
-    <button class="btn btn-light-blue" (click)="addTodo()">입력</button>
-  </div>
+  <form class="todo-form">
+    <div class="todo-text">
+      <input #newTitle class="default-input long-input todo-input-group" placeholder="할일을 작성하세요">
+    </div>
+    <button class="btn btn-group btn-light-blue" (click)="addTodo(newTitle)">등록</button>
+  </form>
   <article class="todo-list">
-    <ul>
-      <li>{{todoItem}}</li>
+    <ul *ngFor="let todo of todoItemList">
+      <li>
+        <div class="todo-text">
+          <input class="long-input" value="{{todo.title}}">
+        </div>
+        <button class="btn btn-group btn-violet" (click)="removeTodo(todo)">삭제</button>
+      </li>
     </ul>
   </article>
-
 </div>
 
 

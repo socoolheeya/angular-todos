@@ -4,14 +4,31 @@
     position: absolute;
     margin-top: 100px;
     padding: 0 3rem;
+    display: flex;
     .todo-input {
       border-radius: 0.2rem;
       border: 1px solid #ddd;
     }
+    .todo-input-group {
+      border-bottom-right-radius: 0 !important;
+      border-top-right-radius: 0 !important;
+    }
+
   }
   .todo-list {
     position: absolute;
-    margin-top: 400px;
-    padding: 0 3rem;
+    margin-top: 10rem;
+    padding: 1rem 0.4rem;
+    ul {
+
+      li {
+        display: flex;
+        div.todo-text {
+          input.long-input {
+
+          }
+        }
+      }
+    }
   }
 }
